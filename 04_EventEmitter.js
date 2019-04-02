@@ -42,7 +42,7 @@ var listener2=function () {
 event.addListener("connection",listener1);
 event.on("connection",listener2);
  var listen_count=event.listenerCount("connection");
- console.log(listen_count+"个个监听器监听连接事件。");
+ console.log(listen_count+"个监听器监听连接事件。");
  event.emit("connection");
 
  event.removeListener("connection",listener1);
